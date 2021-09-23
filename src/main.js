@@ -1,5 +1,5 @@
 const fileList =
-  /* ↓ここに貼り付け↓ */
+  /* ↓ここに`/src/init/file-list.json`の内容を貼り付け↓ */
   [
     'ex01.js',
     'practice-00 copy.js',
@@ -9,7 +9,7 @@ const fileList =
     'practice-03 copy.js',
     'practice-03.js',
   ];
-/* ↑ここに貼り付け↑ */
+/* ↑ここに`/src/init/file-list.json`の内容を貼り付け↑ */
 
 let current = 'test-script.js';
 
