@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <div id='buttons'></div>
-  <script src='./practice/main.js'></script>
-  <script src='main.js'></script>
-</body>
-
+  <body>
+    <h2>Exam</h2>
+    <div id="file_list"></div>
+    <button onclick="runScript()">run</button>
+    <button onclick="changePath(event)">select</button>
+    <div id="run_script"></div>
+    <style>
+      .selected {
+        background-color: tomato;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/lesander/console.history@v1.5.1/console-history.min.js"></script>
+    <script src="./src/main.js"></script>
+    <script>
+      console.history();
+    </script>
+  </body>
 </html>
