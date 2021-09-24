@@ -24,14 +24,14 @@ for (const fileName of fileList) {
   const list = document.createElement('li');
   // const label = fileName.slice(0, fileName.length - 3)
   list.innerHTML = `
-  <span>${fileName.slice(0, fileName.length - 3)}</span>
   <button 
     id="${fileName}"
     type="button"
     onclick="changePath(event)"
   >
-    select
+  select
   </button>
+  <span>${fileName.slice(0, fileName.length - 3)}</span>
   `;
   const target = document.getElementById('file_list');
   target.appendChild(list);
